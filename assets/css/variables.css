@@ -1,0 +1,150 @@
+/* ZeroErrorEnglish Confirmed Brand System Variables */
+:root {
+  /* Color Palette - Confirmed Brand System (Light Mode) */
+  --bg-primary: #FAFAFA;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-secondary: #F4F4F5;
+  --bg-tertiary: #E4E4E7;
+  
+  /* Ink Navy base tokens */
+  --ink-navy: #0F1B33;
+  --ink-navy-soft: #16264A;
+  --ink-navy-surface: #1B2C52;
+  
+  /* Signature Brand Accents */
+  --gold: #F5A623;
+  --gold-hover: #E09312;
+  --gold-subtle: rgba(245, 166, 35, 0.12);
+  --gold-border: rgba(245, 166, 35, 0.35);
+
+  --exam-blue: #2563EB;
+  --blue-bright: #5B8DF6;
+  --blue-subtle: rgba(37, 99, 235, 0.08);
+  --blue-border: rgba(37, 99, 235, 0.25);
+  
+  --primary: var(--exam-blue);
+  --primary-hover: var(--blue-bright);
+  --primary-light: #EFF6FF;
+  --primary-border: #BFDBFE;
+  
+  /* Semantic Correction Tokens (WCAG-AA Compliant) */
+  --error-trap: #C0392B;
+  --error-trap-bg: rgba(192, 57, 43, 0.08);
+  --error-trap-border: rgba(192, 57, 43, 0.28);
+  
+  --success-rule: #27AE60;
+  --success-rule-bg: rgba(39, 174, 96, 0.09);
+  --success-rule-border: rgba(39, 174, 96, 0.3);
+
+  --accent-green: #27AE60;
+  --accent-red: #C0392B;
+  --accent-amber: #F5A623;
+  
+  --text-primary: #18181B;
+  --text-secondary: #71717A;
+  --text-muted: #A1A1AA;
+  --text-inverse: #FAFAFA;
+  
+  --border-color: rgba(24, 24, 27, 0.1);
+  --border-subtle: rgba(24, 24, 27, 0.05);
+  --border-strong: rgba(24, 24, 27, 0.2);
+  
+  /* Typography - Manrope for Headings, Inter for Body */
+  --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  --fs-xs: 0.75rem;    /* 12px */
+  --fs-sm: 0.875rem;   /* 14px */
+  --fs-base: 1rem;     /* 16px - strictly WCAG AA baseline */
+  --fs-md: 1.0625rem;  /* 17px */
+  --fs-lg: 1.1875rem;  /* 19px */
+  --fs-xl: 1.375rem;   /* 22px */
+  --fs-2xl: 1.625rem;  /* 26px */
+  --fs-3xl: 2rem;      /* 32px */
+  --fs-4xl: 2.5rem;    /* 40px */
+  --fs-5xl: 3.25rem;   /* 52px */
+  
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  
+  --lh-tight: 1.15;
+  --lh-snug: 1.3;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.7;
+  
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  
+  /* Containers & Content Measure */
+  --container-max: 1220px;
+  --container-narrow: 860px;
+  --container-reading: 72ch; /* strict line length under 80 characters */
+  
+  /* Radius - disciplined, no cartoon curves */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  
+  /* Shadows - subtle, authentic optical depth */
+  --shadow-xs: 0 1px 2px rgba(15, 27, 51, 0.04);
+  --shadow-sm: 0 1px 3px rgba(15, 27, 51, 0.06), 0 1px 2px rgba(15, 27, 51, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 27, 51, 0.08);
+  --shadow-lg: 0 12px 24px -4px rgba(15, 27, 51, 0.1);
+  
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 240ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Variables - Strictly Ink Navy (#0F1B33), never pure black */
+[data-theme="dark"], .dark {
+  --bg-primary: #0F1B33;
+  --bg-surface: #16264A;
+  --bg-surface-elevated: #1B2C52;
+  --bg-secondary: #12203D;
+  --bg-tertiary: #1E335E;
+  
+  --text-primary: #FAFAFA;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-inverse: #0F1B33;
+  
+  --primary: #5B8DF6;
+  --primary-hover: #93C5FD;
+  --primary-light: rgba(91, 141, 246, 0.15);
+  --primary-border: rgba(91, 141, 246, 0.35);
+  
+  --border-color: rgba(255, 255, 255, 0.12);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.22);
+  
+  --error-trap: #E74C3C;
+  --error-trap-bg: rgba(231, 76, 60, 0.16);
+  --error-trap-border: rgba(231, 76, 60, 0.4);
+  
+  --success-rule: #2ECC71;
+  --success-rule-bg: rgba(46, 204, 113, 0.15);
+  --success-rule-border: rgba(46, 204, 113, 0.4);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 14px 28px rgba(0, 0, 0, 0.55);
+}

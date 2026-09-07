@@ -1,0 +1,307 @@
+/* Admin & CMS Stylesheet */
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.admin-sidebar {
+  background-color: var(--bg-surface);
+  border-right: 1px solid var(--border-color);
+  padding: var(--space-6) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.admin-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lg);
+  color: var(--text-primary);
+  margin-bottom: var(--space-8);
+  padding-left: var(--space-3);
+}
+
+.admin-nav-group {
+  margin-bottom: var(--space-6);
+}
+
+.admin-nav-label {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  padding: 0 var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.admin-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.admin-nav-item:hover, .admin-nav-item.active {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  font-weight: var(--fw-semibold);
+}
+
+.admin-main {
+  padding: var(--space-8) var(--space-10);
+  overflow-y: auto;
+}
+
+.admin-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-title {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+}
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+.stat-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.stat-label {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-1);
+}
+
+.stat-value {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.stat-sub {
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  margin-top: var(--space-2);
+}
+
+/* Data Tables */
+.admin-table-container {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--space-8);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+}
+
+.admin-table th {
+  background-color: var(--bg-secondary);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover td {
+  background-color: var(--bg-secondary);
+}
+
+/* HTML Blog Editor & Split View */
+.editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.editor-quick-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.quick-block-btn {
+  padding: 0.35rem 0.65rem;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.quick-block-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.editor-views-tabs {
+  display: flex;
+  gap: 2px;
+  background-color: var(--bg-tertiary);
+  padding: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.view-tab-btn {
+  padding: 0.3rem 0.75rem;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+}
+
+.view-tab-btn.active {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  font-weight: var(--fw-bold);
+  box-shadow: var(--shadow-xs);
+}
+
+.editor-workspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 540px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  overflow: hidden;
+  background-color: var(--bg-surface);
+}
+
+.editor-workspace.mode-code {
+  grid-template-columns: 1fr;
+}
+
+.editor-workspace.mode-code .editor-preview-pane {
+  display: none;
+}
+
+.editor-workspace.mode-preview {
+  grid-template-columns: 1fr;
+}
+
+.editor-workspace.mode-preview .editor-code-pane {
+  display: none;
+}
+
+.editor-code-pane {
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.code-textarea {
+  flex: 1;
+  width: 100%;
+  padding: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  border: none;
+  outline: none;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  resize: none;
+}
+
+.editor-preview-pane {
+  padding: var(--space-6);
+  overflow-y: auto;
+  background-color: var(--bg-surface);
+}
+
+/* Image Tag Management Tags Pill Grid */
+.tags-manager-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  min-height: 100px;
+}
+
+.tag-editable-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.35rem 0.75rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+}
+
+.tag-remove-btn {
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.tag-remove-btn:hover {
+  color: var(--accent-red);
+}

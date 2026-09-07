@@ -1,0 +1,140 @@
+[
+  {
+    "id": "future-scheduled-post-tenses",
+    "title": "Future Scheduled: 5 Secrets to Perfect Tenses in Cloze Tests",
+    "slug": "future-scheduled-post-tenses",
+    "category": "Exam Traps",
+    "grammarTopic": "Tenses",
+    "targetExam": [
+      "SSC CGL",
+      "Banking"
+    ],
+    "difficulty": "Advanced",
+    "publishDate": "2026-09-10",
+    "updatedAt": "2026-09-10",
+    "author": "ZeroErrorEnglish Editorial",
+    "readingTime": "5",
+    "excerpt": "A preview of our upcoming guide on identifying tense consistency across long reading comprehension passages and cloze tests.",
+    "tags": [
+      "tenses",
+      "cloze-test",
+      "scheduled-post"
+    ],
+    "relatedBooks": [
+      "tenses-decoded"
+    ],
+    "seoTitle": "Future Scheduled: 5 Secrets to Perfect Tenses in Cloze Tests",
+    "metaDescription": "A preview of our upcoming guide on identifying tense consistency across long reading comprehension passages and cloze tests.",
+    "featuredImage": "/assets/images/blog/default.webp",
+    "featuredImageAlt": "Future Scheduled: 5 Secrets to Perfect Tenses in Cloze Tests",
+    "status": "scheduled",
+    "scheduledAt": "2026-09-10T10:00:00.000Z",
+    "filename": "future-scheduled-post-tenses.html"
+  },
+  {
+    "id": "modal-verbs-eliminating-exam-ambiguity",
+    "title": "Modal Verbs: Eliminating Exam Ambiguity Between Should, Must & Ought",
+    "slug": "modal-verbs-eliminating-exam-ambiguity",
+    "category": "Exam Traps",
+    "grammarTopic": "Modal Auxiliaries",
+    "targetExam": [
+      "Banking",
+      "SSC",
+      "CDS"
+    ],
+    "difficulty": "Intermediate",
+    "publishDate": "2025-03-02",
+    "updatedAt": "2025-03-02",
+    "author": "ZeroErrorEnglish Editorial",
+    "readingTime": "6",
+    "excerpt": "Understand how subtle shifts in modality change grammatical accuracy in competitive examination questions.",
+    "tags": [
+      "modals",
+      "auxiliary-verbs",
+      "should-must",
+      "exam-preparation"
+    ],
+    "relatedBooks": [
+      "modal-auxiliaries-in-action"
+    ],
+    "seoTitle": "Modal Verbs: Eliminating Exam Ambiguity Between Should, Must & Ought",
+    "metaDescription": "Understand how subtle shifts in modality change grammatical accuracy in competitive examination questions.",
+    "featuredImage": "/assets/images/blog/modals-guide.webp",
+    "featuredImageAlt": "Modal Verbs: Eliminating Exam Ambiguity Between Should, Must & Ought",
+    "status": "published",
+    "scheduledAt": "",
+    "filename": "modal-verbs-eliminating-exam-ambiguity.html"
+  },
+  {
+    "id": "mastering-fixed-prepositions-rules-and-confusions",
+    "title": "Mastering Fixed Prepositions: 50 Most Repeated Exam Pairs",
+    "slug": "mastering-fixed-prepositions-rules-and-confusions",
+    "category": "Grammar Rules",
+    "grammarTopic": "Prepositions",
+    "targetExam": [
+      "SSC CGL",
+      "Banking",
+      "NDA",
+      "CDS"
+    ],
+    "difficulty": "Advanced",
+    "publishDate": "2025-02-25",
+    "updatedAt": "2025-02-25",
+    "author": "ZeroErrorEnglish Editorial",
+    "readingTime": "8",
+    "excerpt": "Detailed breakdown of high-frequency fixed prepositions like differ with vs differ from, die of vs die from, and prepositions with verbs of perception.",
+    "tags": [
+      "prepositions",
+      "fixed-prepositions",
+      "exam-traps",
+      "ssc-english",
+      "vocabulary"
+    ],
+    "relatedBooks": [
+      "prepositions-simplified"
+    ],
+    "seoTitle": "Mastering Fixed Prepositions: 50 Most Repeated Exam Pairs",
+    "metaDescription": "Detailed breakdown of high-frequency fixed prepositions like differ with vs differ from, die of vs die from, and prepositions with verbs of perception.",
+    "featuredImage": "/assets/images/blog/preposition-rules.webp",
+    "featuredImageAlt": "Mastering Fixed Prepositions: 50 Most Repeated Exam Pairs",
+    "status": "published",
+    "scheduledAt": "",
+    "filename": "mastering-fixed-prepositions-rules-and-confusions.html"
+  },
+  {
+    "id": "subject-verb-agreement-traps-ssc-banking",
+    "title": "Top 10 Subject-Verb Agreement Traps in SSC CGL & Bank PO Exams",
+    "slug": "subject-verb-agreement-traps-ssc-banking",
+    "category": "Grammar Rules",
+    "grammarTopic": "Subject-Verb Agreement",
+    "targetExam": [
+      "SSC CGL",
+      "Bank PO",
+      "NDA",
+      "CDS"
+    ],
+    "difficulty": "Intermediate",
+    "publishDate": "2025-02-18",
+    "updatedAt": "2025-02-18",
+    "author": "ZeroErrorEnglish Editorial",
+    "readingTime": "7",
+    "excerpt": "Avoid the most dangerous Subject-Verb Agreement traps set by examiners, including parenthetical clauses, compound subjects, and indefinite pronouns.",
+    "tags": [
+      "subject-verb-agreement",
+      "ssc-cgl",
+      "bank-po",
+      "error-spotting",
+      "exam-traps"
+    ],
+    "relatedBooks": [
+      "subject-verb-agreement-mastery"
+    ],
+    "seoTitle": "Top 10 Subject-Verb Agreement Traps in SSC CGL & Bank PO Exams",
+    "metaDescription": "Avoid the most dangerous Subject-Verb Agreement traps set by examiners, including parenthetical clauses, compound subjects, and indefinite pronouns.",
+    "featuredImage": "/assets/images/blog/sva-traps.webp",
+    "featuredImageAlt": "Top 10 Subject-Verb Agreement Traps in SSC CGL & Bank PO Exams",
+    "status": "published",
+    "scheduledAt": "",
+    "filename": "subject-verb-agreement-traps-ssc-banking.html"
+  }
+]

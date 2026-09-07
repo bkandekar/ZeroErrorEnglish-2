@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Active & Passive Voice",
+    "slug": "active-passive-voice",
+    "category": "Transformations",
+    "difficulty": "Intermediate",
+    "description": "Syntactic shift focusing either on the doer or recipient of the action.",
+    "coreRuleSummary": "Ensure tense retention with appropriate be-verb + V3 form across assertions, imperatives, and interrogatives.",
+    "relatedBookSlug": "active-and-passive-voice",
+    "filename": "active-passive-voice.html"
+  },
+  {
+    "title": "Direct & Indirect Speech",
+    "slug": "direct-indirect-speech",
+    "category": "Transformations",
+    "difficulty": "Advanced",
+    "description": "Reporting spoken statements without altering original meaning or intent.",
+    "coreRuleSummary": "Apply pronoun adjustments (SON rule), backshift tenses, update time/place anchors, and select precise reporting verbs.",
+    "relatedBookSlug": "direct-and-indirect-speech",
+    "filename": "direct-indirect-speech.html"
+  },
+  {
+    "title": "Modal Auxiliaries",
+    "slug": "modal-auxiliaries",
+    "category": "Verbs",
+    "difficulty": "Intermediate",
+    "description": "Helping verbs indicating mood, ability, obligation, probability, or permission.",
+    "coreRuleSummary": "Master distinction between should/must/ought to, semi-modals dare/need, and past speculation structures.",
+    "relatedBookSlug": "modal-auxiliaries-in-action",
+    "filename": "modal-auxiliaries.html"
+  },
+  {
+    "title": "Prepositions & Fixed Collocations",
+    "slug": "prepositions",
+    "category": "Parts of Speech",
+    "difficulty": "Advanced",
+    "description": "Spatial, temporal, and fixed prepositional attachments to verbs and adjectives.",
+    "coreRuleSummary": "Learn established combinations (abstain from, senior to, die of), avoid unnecessary prepositions after transitive verbs.",
+    "relatedBookSlug": "prepositions-simplified",
+    "filename": "prepositions.html"
+  },
+  {
+    "title": "Subject-Verb Agreement",
+    "slug": "subject-verb-agreement",
+    "category": "Syntax & Agreement",
+    "difficulty": "Intermediate",
+    "description": "The singular/plural concord between subjects and finite verbs in sentences.",
+    "coreRuleSummary": "Identify the true subject, disregard prepositional modifiers, follow proximity rules with either/or, and recognize collective noun units.",
+    "relatedBookSlug": "subject-verb-agreement-mastery",
+    "filename": "subject-verb-agreement.html"
+  },
+  {
+    "title": "Tenses & Time Markers",
+    "slug": "tenses",
+    "category": "Verbs & Timeline",
+    "difficulty": "Intermediate",
+    "description": "The 12 tenses describing state and progression across past, present, and future.",
+    "coreRuleSummary": "Coordinate main and subordinate clause tenses, adhere to since/for rules, and avoid past perfect overuse.",
+    "relatedBookSlug": "tenses-decoded",
+    "filename": "tenses.html"
+  }
+]

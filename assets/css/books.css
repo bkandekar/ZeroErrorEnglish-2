@@ -1,0 +1,286 @@
+/* Books & eBooks Stylesheet */
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-8);
+}
+
+.book-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.book-card-cover-wrap {
+  background: linear-gradient(135deg, #18181B 0%, #27272A 100%);
+  padding: var(--space-8) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.book-card-cover {
+  width: 170px;
+  height: 245px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.45);
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.book-card:hover .book-card-cover {
+  transform: scale(1.04) rotate(-1deg);
+}
+
+.book-badge-difficulty {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+}
+
+.book-card-body {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.book-card-topic {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.book-card-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.book-card-benefit {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+  flex: 1;
+}
+
+.book-card-audience {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.book-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-2);
+  margin-top: auto;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Book Details Page Layout */
+.book-hero {
+  padding: var(--space-12) 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+}
+
+.book-hero-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.book-cover-large-wrap {
+  position: sticky;
+  top: 5.5rem;
+  background: linear-gradient(135deg, #18181B 0%, #27272A 100%);
+  padding: var(--space-10) var(--space-6);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+}
+
+.book-cover-large {
+  width: 230px;
+  height: 330px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+  margin-bottom: var(--space-6);
+}
+
+.book-hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.book-hero-title {
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-extrabold);
+  line-height: var(--lh-tight);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.book-hero-subtitle {
+  font-size: var(--fs-xl);
+  color: var(--text-secondary);
+  line-height: var(--lh-normal);
+}
+
+.book-hero-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: var(--space-2) 0;
+}
+
+.book-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.book-tag-chip {
+  font-size: var(--fs-xs);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.book-tag-chip:hover {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary-border);
+}
+
+/* Book Sections: What you will learn, Who it is for, FAQ */
+.book-section {
+  padding: var(--space-10) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.book-section h3 {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  margin-bottom: var(--space-6);
+  color: var(--text-primary);
+}
+
+.feature-check-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.feature-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
+}
+
+.feature-check-icon {
+  color: var(--accent-green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Smart Recommendation Wizard */
+.recommendation-wizard-card {
+  background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-secondary) 100%);
+  border: 1px solid var(--primary-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  margin: var(--space-10) 0;
+}
+
+.wizard-steps {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.wizard-step-dot {
+  flex: 1;
+  height: 4px;
+  background-color: var(--border-strong);
+  border-radius: var(--radius-full);
+}
+
+.wizard-step-dot.active {
+  background-color: var(--primary);
+}
+
+.wizard-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.wizard-option-btn {
+  padding: var(--space-4);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-sm);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.wizard-option-btn:hover, .wizard-option-btn.selected {
+  border-color: var(--primary);
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.recommendation-result {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

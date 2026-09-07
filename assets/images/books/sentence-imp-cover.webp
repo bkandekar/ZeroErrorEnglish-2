@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 460" width="320" height="460">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#713F12" />
+      <stop offset="100%" stop-color="#09090B" />
+    </linearGradient>
+    <linearGradient id="spine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="320" height="460" rx="6" fill="url(#bgGrad)"/>
+  <!-- Spine shadow -->
+  <rect width="18" height="460" fill="url(#spine)"/>
+  <!-- Inner border -->
+  <rect x="24" y="24" width="272" height="412" rx="4" fill="none" stroke="#EAB308" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- Series Badge -->
+  <rect x="40" y="44" width="160" height="22" rx="3" fill="#EAB308" fill-opacity="0.2"/>
+  <text x="48" y="59" fill="#EAB308" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" letter-spacing="1">ZEROERROR ENGLISH</text>
+  <!-- Title -->
+  <text x="40" y="140" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="24" font-weight="800" width="240">
+    <tspan x="40" dy="0">Sentence</tspan><tspan x="40" dy="30">Improvement</tspan><tspan x="40" dy="30">Handbook</tspan>
+  </text>
+  <!-- Subtitle -->
+  <text x="40" y="270" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="12" font-weight="500">
+    <tspan x="40" dy="0">Replace &amp; Refine for Maximum</tspan><tspan x="40" dy="18">Exam Marks</tspan>
+  </text>
+  <!-- Exam tags -->
+  <rect x="40" y="340" width="240" height="28" rx="4" fill="#27272A" stroke="#3F3F46" stroke-width="1"/>
+  <text x="50" y="358" fill="#F4F4F5" font-family="system-ui, sans-serif" font-size="10" font-weight="600">SSC • BANKING • CDS • ACADEMICS</text>
+  <!-- Author footer -->
+  <line x1="40" y1="390" x2="280" y2="390" stroke="#EAB308" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="40" y="415" fill="#E4E4E7" font-family="system-ui, sans-serif" font-size="12" font-weight="700">AUTHORITATIVE KDP GUIDE</text>
+  <text x="235" y="415" fill="#EAB308" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">KINDLE</text>
+</svg>

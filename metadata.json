@@ -1,0 +1,6 @@
+{
+  "name": "ZeroErrorEnglish",
+  "description": "ZeroErrorEnglish is a world-class English Grammar learning platform, SEO blog, interactive practice & quiz system, and Amazon KDP eBook discovery hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

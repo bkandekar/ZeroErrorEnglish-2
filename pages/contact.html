@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Feedback | ZeroErrorEnglish</title>
+  <meta name="description" content="Get in touch with the ZeroErrorEnglish author for grammar doubts, institutional queries, or book feedback.">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo">
+        <div class="brand-symbol">ZE</div>
+        <span>ZeroError<strong>English</strong></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/pages/grammar-topics.html" class="nav-link">Topics</a>
+        <a href="/pages/books.html" class="nav-link">14 eBooks</a>
+        <a href="/pages/blog.html" class="nav-link">Grammar Lessons</a>
+        <a href="/pages/practice.html" class="nav-link">Practice Zone</a>
+        <a href="/pages/quizzes.html" class="nav-link">Quizzes</a>
+        <a href="/pages/weakness-finder.html" class="nav-link">Weakness Finder</a>
+        <a href="/pages/about.html" class="nav-link">Author</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-secondary btn-sm open-search-modal">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span class="search-btn-text">Search</span>
+        </button>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <span class="theme-icon"></span>
+        </button>
+        <a href="/admin/index.html" class="btn btn-outline btn-xs">CMS Admin</a>
+        <button type="button" class="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="/">Home</a>
+          <span class="separator">/</span>
+          <span>Contact</span>
+        </nav>
+        <span class="badge badge-primary" style="margin-bottom: var(--space-2);">Get In Touch</span>
+        <h1 class="page-title">Contact &amp; Student Doubts</h1>
+        <p class="page-subtitle">
+          Have a question about a specific grammar rule, need help choosing which of our 14 eBooks fits your preparation, or wish to report a question? Reach out to us.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width: 640px;">
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: var(--space-8); box-shadow: var(--shadow-sm);">
+          <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('contact-status').innerHTML = '<div style=\'padding: 1rem; background: var(--color-success-bg); color: var(--color-success); border-radius: 6px; font-weight: 600;\'>Thank you! Your message has been received by our editorial desk.</div>'; this.reset();">
+            <div style="margin-bottom: var(--space-4);">
+              <label style="display: block; font-size: var(--fs-sm); font-weight: var(--fw-bold); margin-bottom: var(--space-1);">Your Name</label>
+              <input type="text" required class="form-input" placeholder="e.g. Priyanshu Sharma" />
+            </div>
+
+            <div style="margin-bottom: var(--space-4);">
+              <label style="display: block; font-size: var(--fs-sm); font-weight: var(--fw-bold); margin-bottom: var(--space-1);">Email Address</label>
+              <input type="email" required class="form-input" placeholder="you@example.com" />
+            </div>
+
+            <div style="margin-bottom: var(--space-4);">
+              <label style="display: block; font-size: var(--fs-sm); font-weight: var(--fw-bold); margin-bottom: var(--space-1);">Query Type</label>
+              <select class="form-select">
+                <option>Question about an eBook on Amazon KDP</option>
+                <option>Clarification on a Grammar Rule / Trap</option>
+                <option>Teacher / Institutional Bulk Inquiries</option>
+                <option>General Feedback or Suggestion</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: var(--space-6);">
+              <label style="display: block; font-size: var(--fs-sm); font-weight: var(--fw-bold); margin-bottom: var(--space-1);">Your Message</label>
+              <textarea rows="5" required class="form-input" placeholder="Type your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            <div id="contact-status" style="margin-top: var(--space-4);"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 ZeroErrorEnglish. 14 English Grammar eBooks on Amazon KDP.</div>
+        <a href="/">Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

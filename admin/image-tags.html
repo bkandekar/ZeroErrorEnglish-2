@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Tags &amp; Media Manager | ZeroError CMS</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/admin.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body class="admin-body">
+
+  <header class="admin-header">
+    <div class="admin-header-inner">
+      <div style="display: flex; align-items: center; gap: var(--space-4);">
+        <a href="/admin/index.html" class="brand-logo" style="font-size: 1.125rem;">
+          <div class="brand-symbol" style="width: 28px; height: 28px; font-size: 0.8rem;">ZE</div>
+          <span>ZeroError<strong>CMS</strong></span>
+        </a>
+        <span class="badge badge-primary">Media &amp; Image Tags</span>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: var(--space-3);">
+        <a href="/admin/index.html" class="btn btn-secondary btn-sm">← Back to Dashboard</a>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <span class="theme-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <nav class="admin-sidebar-nav">
+        <a href="/admin/index.html" class="admin-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Dashboard Overview</span>
+        </a>
+        <a href="/admin/create-post.html" class="admin-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          <span>Create / Edit Post</span>
+        </a>
+        <a href="/admin/schedule.html" class="admin-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Post Scheduler</span>
+        </a>
+        <a href="/admin/image-tags.html" class="admin-nav-item active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Image Tags &amp; Media</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <div style="margin-bottom: var(--space-6);">
+        <h1 style="font-size: var(--fs-2xl); font-weight: var(--fw-extrabold); letter-spacing: -0.02em;">eBook &amp; Blog Media Image Tags Manager</h1>
+        <p style="color: var(--text-secondary); font-size: var(--fs-sm);">
+          Manage semantic image tags and alt text across all 14 published Amazon KDP eBook covers to maximize SEO and contextual article recommendations.
+        </p>
+      </div>
+
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: var(--space-6); box-shadow: var(--shadow-sm);">
+        <div id="image-tags-manager-root">
+          <div style="max-width: 680px;">
+            <div style="margin-bottom: var(--space-4);">
+              <label class="form-label" style="font-weight: var(--fw-bold);">Select Published eBook</label>
+              <select id="tag-manager-book-select" class="form-select"></select>
+            </div>
+
+            <div style="margin-bottom: var(--space-4);">
+              <label class="form-label" style="font-weight: var(--fw-bold);">Semantic Tags (Used for Contextual Matching &amp; Search)</label>
+              <div id="tag-manager-tags-list" style="display: flex; flex-wrap: wrap; gap: var(--space-2); min-height: 48px; padding: var(--space-3); background: var(--bg-secondary); border-radius: var(--radius-md); border: 1px solid var(--border-color); align-items: center;">
+                <div style="color: var(--text-muted); font-size: var(--fs-sm);">Select a book above to view and edit its image &amp; topic tags.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: var(--space-2); margin-bottom: var(--space-6);">
+              <input type="text" id="tag-manager-new-tag" class="form-input" placeholder="Type new tag (e.g. error-spotting, ssc-cgl)..." />
+              <button type="button" id="tag-manager-add-btn" class="btn btn-secondary">Add Tag</button>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end;">
+              <button type="button" id="tag-manager-save-btn" class="btn btn-primary">Save Tags to eBook HTML</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/assets/js/main.js"></script>
+  <script type="module" src="/assets/js/image-tags.js"></script>
+</body>
+</html>

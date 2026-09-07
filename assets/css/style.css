@@ -1,0 +1,647 @@
+/* ==========================================================================
+   ZeroErrorEnglish - Master Editorial & Publishing Stylesheet
+   Confirmed Brand System: Ink Navy (#0F1B33), Gold (#F5A623), Exam Blue (#2563EB)
+   Typography: Manrope (Headings/Display), Inter (Body)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   HERO SECTION - Split Asymmetric Editorial Layout
+   -------------------------------------------------------------------------- */
+.hero-section {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.hero-split-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.hero-editorial-copy {
+  max-width: 640px;
+}
+
+.hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.04em;
+  color: #0F1B33;
+  background-color: var(--gold-subtle);
+  border: 1px solid var(--gold-border);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-4);
+}
+
+[data-theme="dark"] .hero-kicker {
+  color: var(--gold);
+  background-color: rgba(245, 166, 35, 0.15);
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-5xl);
+  font-weight: var(--fw-extrabold);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--text-primary);
+  margin-bottom: var(--space-5);
+}
+
+.hero-title-accent {
+  color: var(--exam-blue);
+  display: block;
+}
+
+[data-theme="dark"] .hero-title-accent {
+  color: var(--blue-bright);
+}
+
+.hero-desc {
+  font-family: var(--font-body);
+  font-size: var(--fs-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--text-secondary);
+  max-width: 58ch; /* strictly under 80 characters */
+  margin-bottom: var(--space-8);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-8);
+}
+
+.hero-authority-strip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-subtle);
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+}
+
+.authority-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.authority-item strong {
+  color: var(--text-primary);
+  font-weight: var(--fw-bold);
+}
+
+.authority-icon {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   GRAMMAR PILLARS LEDGER - Distinctive Tabular Editorial Layout
+   (Replaces the generic AI card grid)
+   -------------------------------------------------------------------------- */
+.ledger-container {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-surface);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.ledger-row {
+  display: grid;
+  grid-template-columns: 240px 1fr 280px 140px;
+  gap: var(--space-6);
+  padding: var(--space-5) var(--space-6);
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color var(--transition-fast);
+}
+
+.ledger-row:last-child {
+  border-bottom: none;
+}
+
+.ledger-row:hover {
+  background-color: var(--bg-secondary);
+}
+
+.ledger-row.ledger-header {
+  background-color: var(--bg-secondary);
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ledger-topic-cell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.ledger-topic-name {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-base);
+  color: var(--text-primary);
+}
+
+.ledger-exam-frequency {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+.ledger-trap-cell {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  line-height: var(--lh-normal);
+}
+
+.ledger-trap-highlight {
+  color: var(--error-trap);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--error-trap-bg);
+  padding: 0.1em 0.3em;
+  border-radius: var(--radius-sm);
+}
+
+.ledger-formula-cell {
+  font-size: var(--fs-xs);
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+}
+
+.ledger-action-cell {
+  text-align: right;
+}
+
+/* --------------------------------------------------------------------------
+   14 AMAZON KDP EBOOK SHOWCASE - Editorial Shelf
+   -------------------------------------------------------------------------- */
+.library-shelf-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.library-tier-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.books-editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-12);
+}
+
+.book-editorial-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition-normal), transform var(--transition-normal);
+  position: relative;
+}
+
+.book-editorial-card:hover {
+  border-color: var(--gold-border);
+  transform: translateY(-2px);
+}
+
+.book-spine-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--gold);
+  border-top-left-radius: var(--radius-lg);
+  border-bottom-left-radius: var(--radius-lg);
+}
+
+.book-format-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  margin-bottom: var(--space-3);
+  padding-left: var(--space-2);
+}
+
+.book-vol-tag {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  color: var(--exam-blue);
+  background-color: var(--primary-light);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.book-card-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+  padding-left: var(--space-2);
+}
+
+.book-card-desc {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  line-height: var(--lh-normal);
+  margin-bottom: var(--space-5);
+  padding-left: var(--space-2);
+  flex: 1;
+}
+
+.book-card-specs {
+  display: flex;
+  gap: var(--space-4);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  padding: var(--space-3) var(--space-2);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: var(--space-4);
+}
+
+.book-card-actions {
+  display: flex;
+  gap: var(--space-2);
+  padding-left: var(--space-2);
+}
+
+/* --------------------------------------------------------------------------
+   DAILY EXAM TRAP TESTER - Live Diagnostic Widget
+   -------------------------------------------------------------------------- */
+.trap-tester-container {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-sm);
+}
+
+.trap-sentence-parts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-6) 0;
+}
+
+.trap-part-btn {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.trap-part-btn:hover {
+  background-color: var(--bg-tertiary);
+  border-color: var(--border-strong);
+}
+
+.trap-part-btn.is-selected-error {
+  background-color: var(--error-trap-bg);
+  border-color: var(--error-trap);
+  color: var(--error-trap);
+  font-weight: var(--fw-bold);
+}
+
+.trap-part-btn.is-correct-fix {
+  background-color: var(--success-rule-bg);
+  border-color: var(--success-rule);
+  color: var(--success-rule);
+  font-weight: var(--fw-bold);
+}
+
+/* --------------------------------------------------------------------------
+   AUTHOR PEDAGOGY ESSAY - Reading-Optimized Typography
+   -------------------------------------------------------------------------- */
+.pedagogy-reading-layout {
+  max-width: var(--container-reading);
+  margin: 0 auto;
+}
+
+.pedagogy-manifesto {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.pedagogy-point {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.pedagogy-num {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--exam-blue);
+  line-height: 1;
+}
+
+.pedagogy-point-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.pedagogy-point-desc {
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   TOPIC DIRECTORY SYLLABUS HUB
+   -------------------------------------------------------------------------- */
+.syllabus-tier {
+  margin-bottom: var(--space-12);
+}
+
+.syllabus-tier-header {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-6);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.syllabus-tier-name {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.syllabus-tier-tag {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+.syllabus-topics-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: var(--space-6);
+}
+
+.syllabus-topic-item {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+}
+
+.syllabus-topic-item:hover {
+  border-color: var(--border-strong);
+}
+
+.syllabus-topic-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.syllabus-trap-sample {
+  background-color: var(--bg-secondary);
+  border-left: 3px solid var(--error-trap);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: var(--fs-xs);
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+.syllabus-trap-sample strong {
+  color: var(--error-trap);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.syllabus-rule-note {
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  line-height: var(--lh-normal);
+  margin-bottom: var(--space-4);
+}
+
+.syllabus-topic-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-subtle);
+  font-size: var(--fs-xs);
+}
+
+/* --------------------------------------------------------------------------
+   SITE FOOTER - Structured, Quiet, Trustworthy
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-12);
+  color: var(--text-secondary);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: var(--space-10);
+  margin-bottom: var(--space-12);
+}
+
+.footer-desc {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
+  color: var(--text-secondary);
+  max-width: 320px;
+  margin-top: var(--space-3);
+}
+
+.footer-col-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-4);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footer-link {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--exam-blue);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--border-subtle);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+/* Search Modal */
+.search-modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 27, 51, 0.65);
+  backdrop-filter: blur(6px);
+  z-index: 300;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 12vh;
+}
+
+.search-modal-backdrop.is-open {
+  display: flex;
+}
+
+.search-modal-box {
+  width: 100%;
+  max-width: 640px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--border-color);
+  gap: var(--space-3);
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: var(--fs-lg);
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.search-results-list {
+  max-height: 380px;
+  overflow-y: auto;
+  padding: var(--space-3);
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+
+.search-result-item:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* Responsive Overrides */
+@media (max-width: 1024px) {
+  .hero-split-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .ledger-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  .ledger-row.ledger-header {
+    display: none;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: var(--fs-4xl);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

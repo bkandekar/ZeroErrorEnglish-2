@@ -1,0 +1,177 @@
+/* Practice Zone Stylesheet */
+
+.practice-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+  padding: var(--space-4);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+}
+
+.practice-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  margin-bottom: var(--space-6);
+  transition: all var(--transition-normal);
+}
+
+.practice-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.practice-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.practice-type-tag {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  color: var(--primary);
+  background-color: var(--primary-light);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+/* Error Spotting Sentence Split (Part A, Part B, Part C, Part D, No Error) */
+.error-spotting-sentence {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-relaxed);
+  background-color: var(--bg-secondary);
+  padding: var(--space-5) var(--space-6);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--border-color);
+}
+
+.sentence-part {
+  display: inline-block;
+  padding: 0.15rem 0.35rem;
+  border-radius: var(--radius-sm);
+  font-weight: var(--fw-medium);
+}
+
+.sentence-part-marker {
+  font-weight: var(--fw-bold);
+  color: var(--primary);
+  margin-right: 2px;
+}
+
+.practice-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.practice-option-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  text-align: left;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  transition: all var(--transition-fast);
+}
+
+.practice-option-btn:hover {
+  border-color: var(--primary);
+  background-color: var(--bg-secondary);
+}
+
+.practice-option-btn.correct {
+  background-color: var(--accent-green-bg) !important;
+  border-color: var(--accent-green) !important;
+  color: var(--accent-green) !important;
+  font-weight: var(--fw-bold);
+}
+
+.practice-option-btn.incorrect {
+  background-color: var(--accent-red-bg) !important;
+  border-color: var(--accent-red) !important;
+  color: var(--accent-red) !important;
+  font-weight: var(--fw-bold);
+}
+
+.option-letter {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-secondary);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  flex-shrink: 0;
+}
+
+/* Practice Feedback & Explanation Reveal */
+.practice-feedback-panel {
+  display: none;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-top: var(--space-4);
+  animation: fadeIn 0.25s ease;
+}
+
+.practice-feedback-panel.is-visible {
+  display: block;
+}
+
+.feedback-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-3);
+}
+
+.feedback-rule-citation {
+  background-color: var(--bg-surface);
+  border-left: 3px solid var(--primary);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: var(--space-3) 0;
+  font-size: var(--fs-sm);
+}
+
+.feedback-book-recommendation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  background-color: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  margin-top: var(--space-4);
+}
+
+.feedback-book-info {
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+}
+
+.feedback-book-info strong {
+  color: var(--primary);
+  display: block;
+  font-size: var(--fs-sm);
+}

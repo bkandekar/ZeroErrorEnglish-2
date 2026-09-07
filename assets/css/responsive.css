@@ -1,0 +1,136 @@
+/* Responsive Breakpoints & Mobile Adaptations */
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-6);
+  }
+  
+  .layout-with-sidebar {
+    grid-template-columns: 1fr 300px;
+    gap: var(--space-6);
+  }
+
+  .admin-layout {
+    grid-template-columns: 220px 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navigation */
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Grid Stack */
+  .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .layout-with-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky-sidebar {
+    position: static;
+    margin-top: var(--space-8);
+  }
+
+  .book-hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .book-cover-large-wrap {
+    position: static;
+  }
+
+  .feature-check-list {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-compare-box {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-book-insight {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+
+  /* Sticky Mobile Buy CTA on Book Details */
+  .sticky-mobile-cta {
+    display: flex;
+  }
+
+  /* Admin Layout */
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    display: none;
+  }
+
+  .admin-main {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .editor-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .editor-code-pane {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .quiz-analysis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: var(--fs-2xl);
+  }
+
+  .article-title {
+    font-size: var(--fs-2xl);
+  }
+
+  .btn-lg {
+    padding: 0.85rem 1.25rem;
+    font-size: var(--fs-sm);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+}

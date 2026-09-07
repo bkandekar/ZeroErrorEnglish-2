@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="blogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C2D12" />
+      <stop offset="100%" stop-color="#09090B" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#blogBg)" />
+  <circle cx="700" cy="100" r="180" fill="#2563EB" fill-opacity="0.15" />
+  <rect x="60" y="60" width="160" height="26" rx="4" fill="#2563EB" />
+  <text x="75" y="78" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">ZEROERROR LESSON</text>
+  <text x="60" y="180" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="36" font-weight="800">
+    <tspan x="60" dy="0">Mastering Prepositions: Rules &amp;</tspan><tspan x="60" dy="46">Confusions</tspan>
+  </text>
+  <text x="60" y="340" fill="#A1A1AA" font-family="system-ui, sans-serif" font-size="18" font-weight="500">
+    Comprehensive Grammar Rule Guide with PYQs &amp; Error Spotting
+  </text>
+  <line x1="60" y1="380" x2="740" y2="380" stroke="#3F3F46" stroke-width="1"/>
+  <text x="60" y="410" fill="#71717A" font-family="system-ui, sans-serif" font-size="14">ZeroErrorEnglish Editorial • Competitive Exam Preparation</text>
+</svg>

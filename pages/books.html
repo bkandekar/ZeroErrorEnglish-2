@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14 English Grammar eBooks | ZeroErrorEnglish Amazon KDP Series</title>
+  <meta name="description" content="Explore all 14 published English Grammar eBooks on Amazon KDP. Specialized guides on Subject-Verb Agreement, Tenses, Prepositions, Modals, Voice, Speech, and 500+ Error Spotting.">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/books.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo">
+        <div class="brand-symbol">ZE</div>
+        <span>ZeroError<strong>English</strong></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/pages/grammar-topics.html" class="nav-link">Topics</a>
+        <a href="/pages/books.html" class="nav-link active">14 eBooks</a>
+        <a href="/pages/blog.html" class="nav-link">Grammar Lessons</a>
+        <a href="/pages/practice.html" class="nav-link">Practice Zone</a>
+        <a href="/pages/quizzes.html" class="nav-link">Quizzes</a>
+        <a href="/pages/weakness-finder.html" class="nav-link">Weakness Finder</a>
+        <a href="/pages/about.html" class="nav-link">Author</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-secondary btn-sm open-search-modal">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span class="search-btn-text">Search</span>
+        </button>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <span class="theme-icon"></span>
+        </button>
+        <a href="/admin/index.html" class="btn btn-outline btn-xs">CMS Admin</a>
+        <button type="button" class="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <a href="/pages/grammar-topics.html" class="mobile-nav-link">Grammar Topics</a>
+      <a href="/pages/books.html" class="mobile-nav-link active">14 Grammar eBooks</a>
+      <a href="/pages/blog.html" class="mobile-nav-link">Grammar Lessons &amp; Blog</a>
+      <a href="/pages/practice.html" class="mobile-nav-link">Practice Zone</a>
+      <a href="/pages/quizzes.html" class="mobile-nav-link">Quizzes</a>
+      <a href="/pages/weakness-finder.html" class="mobile-nav-link">Weakness Finder</a>
+      <a href="/pages/about.html" class="mobile-nav-link">About Author</a>
+      <a href="/admin/index.html" class="mobile-nav-link">CMS Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="/">Home</a>
+          <span class="separator">/</span>
+          <span>14 eBooks</span>
+        </nav>
+        <span class="badge badge-primary" style="margin-bottom: var(--space-2);">Amazon KDP Published Series</span>
+        <h1 class="page-title">The 14 English Grammar eBooks Library</h1>
+        <p class="page-subtitle">
+          Authored by an expert English educator. Each eBook is a laser-focused, zero-error handbook covering targeted rules, high-frequency exam traps, and real competitive exam questions.
+        </p>
+
+        <!-- Filter & Search Controls -->
+        <div class="filter-bar" style="margin-top: var(--space-8);">
+          <div style="flex: 1; min-width: 240px;">
+            <input type="text" id="books-search-input" class="form-input" placeholder="Search books by title, topic, or keyword..." />
+          </div>
+          <div>
+            <select id="books-topic-filter" class="form-select">
+              <option value="all">All Grammar Topics</option>
+              <option value="Subject-Verb Agreement">Subject-Verb Agreement</option>
+              <option value="Tenses">Tenses</option>
+              <option value="Prepositions">Prepositions</option>
+              <option value="Modal Auxiliaries">Modal Auxiliaries</option>
+              <option value="Active & Passive Voice">Active &amp; Passive Voice</option>
+              <option value="Direct & Indirect Speech">Direct &amp; Indirect Speech</option>
+              <option value="Articles">Articles</option>
+              <option value="Question Tags">Question Tags</option>
+              <option value="Conditionals">Conditionals</option>
+              <option value="Error Spotting">Error Spotting</option>
+              <option value="Grammar Shortcuts">Grammar Shortcuts</option>
+            </select>
+          </div>
+          <div>
+            <select id="books-diff-filter" class="form-select">
+              <option value="all">All Difficulty Levels</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="books-grid" id="books-grid">
+          <!-- Dynamically populated by assets/js/books.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 ZeroErrorEnglish. 14 English Grammar eBooks on Amazon KDP.</div>
+        <a href="/">Back to Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="search-modal-backdrop">
+    <div class="search-modal-box">
+      <div class="search-input-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-input search-modal-input" placeholder="Search rules, books, articles, or exam traps..." />
+        <button type="button" class="search-modal-close" style="background:none; border:none; cursor:pointer; font-size:1.25rem;">✕</button>
+      </div>
+      <div class="search-results-list"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/assets/js/main.js"></script>
+  <script type="module" src="/assets/js/books.js"></script>
+</body>
+</html>

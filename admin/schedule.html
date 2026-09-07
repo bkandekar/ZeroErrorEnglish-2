@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Scheduling System | ZeroError CMS</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/admin.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body class="admin-body">
+
+  <header class="admin-header">
+    <div class="admin-header-inner">
+      <div style="display: flex; align-items: center; gap: var(--space-4);">
+        <a href="/admin/index.html" class="brand-logo" style="font-size: 1.125rem;">
+          <div class="brand-symbol" style="width: 28px; height: 28px; font-size: 0.8rem;">ZE</div>
+          <span>ZeroError<strong>CMS</strong></span>
+        </a>
+        <span class="badge badge-primary">Blog Scheduling Engine</span>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: var(--space-3);">
+        <a href="/admin/create-post.html" class="btn btn-primary btn-sm">+ New Post</a>
+        <a href="/" class="btn btn-secondary btn-sm" target="_blank">Live Website ↗</a>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <span class="theme-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <nav class="admin-sidebar-nav">
+        <a href="/admin/index.html" class="admin-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Dashboard Overview</span>
+        </a>
+        <a href="/admin/create-post.html" class="admin-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          <span>Create / Edit Post</span>
+        </a>
+        <a href="/admin/schedule.html" class="admin-nav-item active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Post Scheduler</span>
+        </a>
+        <a href="/admin/image-tags.html" class="admin-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Image Tags &amp; Media</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <div style="margin-bottom: var(--space-6); display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: var(--space-4);">
+        <div>
+          <h1 style="font-size: var(--fs-2xl); font-weight: var(--fw-extrabold); letter-spacing: -0.02em;">Automated Content Scheduler</h1>
+          <p style="color: var(--text-secondary); font-size: var(--fs-sm); margin-top: var(--space-1);">
+            All articles queued here will automatically be released at their scheduled time. You can also trigger immediate publication or alter release times.
+          </p>
+        </div>
+        <span class="badge badge-primary" id="scheduled-count-badge" style="font-size: var(--fs-sm); padding: 0.4rem 0.8rem;">Loading...</span>
+      </div>
+
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: var(--space-6); box-shadow: var(--shadow-sm);">
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Article Title &amp; Slug</th>
+                <th>Grammar Topic</th>
+                <th>Scheduled Date &amp; Countdown</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="scheduled-posts-table-body">
+              <tr><td colspan="5" style="text-align: center; padding: 2rem;">Loading scheduled posts...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/assets/js/main.js"></script>
+  <script type="module" src="/assets/js/blog-scheduler.js"></script>
+</body>
+</html>

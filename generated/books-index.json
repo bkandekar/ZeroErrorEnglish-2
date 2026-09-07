@@ -1,0 +1,391 @@
+[
+  {
+    "id": "500-error-spotting",
+    "title": "500+ Error Spotting Questions: Comprehensive Exam Handbook",
+    "slug": "500-error-spotting-questions",
+    "topic": "Error Spotting",
+    "targetAudience": "SSC CGL, CHSL, CPO, IBPS PO, SBI Clerk, CDS & NDA Aspirants",
+    "difficulty": "Advanced",
+    "coverImage": "/assets/images/books/error-spotting-cover.webp",
+    "coverImageAlt": "Cover image for 500+ Error Spotting Questions: Comprehensive Exam Handbook",
+    "imageTags": [
+      "error-spotting",
+      "practice-handbook",
+      "ssc-previous-years",
+      "mock-tests",
+      "500-questions"
+    ],
+    "keyBenefits": [
+      "500 high-yield",
+      "rigorously validated error spotting questions covering all parts of speech",
+      "with detailed rule citations."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMP500",
+    "publishDate": "2025-03-20",
+    "isbn": "979-8877665512",
+    "description": "The ultimate practice weapon for competitive exams. 500 hand-picked questions organized by grammar topics and mixed full-length mock sets to test and hone your error detection speed.",
+    "filename": "500-error-spotting-questions.html"
+  },
+  {
+    "id": "active-passive",
+    "title": "Active & Passive Voice: Complete Transformation Mastery",
+    "slug": "active-and-passive-voice",
+    "topic": "Active & Passive Voice",
+    "targetAudience": "SSC CGL Tier 2, CHSL, NDA, CDS & State PSC",
+    "difficulty": "Intermediate",
+    "coverImage": "/assets/images/books/voice-cover.webp",
+    "coverImageAlt": "Cover image for Active & Passive Voice: Complete Transformation Mastery",
+    "imageTags": [
+      "voice",
+      "active-passive",
+      "sentence-transformation",
+      "ssc-tier-2",
+      "grammar-rules"
+    ],
+    "keyBenefits": [
+      "Master active to passive transformations across all tenses",
+      "imperatives",
+      "interrogatives",
+      "and sentences with two objects."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPVOI",
+    "publishDate": "2025-02-15",
+    "isbn": "979-8877665505",
+    "description": "Voice transformation carries huge weightage in SSC CGL Tier 2 and State exams. This book ensures you transform complex interrogative, imperative, and passive infinitive sentences with zero hesitation.",
+    "filename": "active-and-passive-voice.html"
+  },
+  {
+    "id": "articles-guide",
+    "title": "Articles: A, An, The — Zero Error Guide",
+    "slug": "articles-a-an-the",
+    "topic": "Articles",
+    "targetAudience": "All Competitive Exams, School & College Students",
+    "difficulty": "Beginner",
+    "coverImage": "/assets/images/books/articles-cover.webp",
+    "coverImageAlt": "Cover image for Articles: A, An, The — Zero Error Guide",
+    "imageTags": [
+      "articles",
+      "a-an-the",
+      "definite-article",
+      "omission-of-articles",
+      "english-basics"
+    ],
+    "keyBenefits": [
+      "Never get tripped by vowel sounds",
+      "omission of articles (school",
+      "church",
+      "hospital)",
+      "or proper noun exceptions."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPART",
+    "publishDate": "2025-02-25",
+    "isbn": "979-8877665507",
+    "description": "Articles look deceptively simple, but they form the backbone of 15% of all competitive error spotting questions. Learn sound-based article usage and the 25 strict rules of article omission.",
+    "filename": "articles-a-an-the.html"
+  },
+  {
+    "id": "conditional-sentences",
+    "title": "Conditional Sentences: Zero, First, Second & Third Conditionals",
+    "slug": "conditional-sentences",
+    "topic": "Conditionals",
+    "targetAudience": "Banking, SSC CGL, IELTS, TOEFL & Competitive Exams",
+    "difficulty": "Advanced",
+    "coverImage": "/assets/images/books/conditional-cover.webp",
+    "coverImageAlt": "Cover image for Conditional Sentences: Zero, First, Second & Third Conditionals",
+    "imageTags": [
+      "conditionals",
+      "if-clauses",
+      "wish-clauses",
+      "hypothetical-structures",
+      "exam-rules"
+    ],
+    "keyBenefits": [
+      "Master all conditional patterns",
+      "inversion structures (\"Had I known...\")",
+      "and mixed conditionals with zero ambiguity."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPCON",
+    "publishDate": "2025-03-05",
+    "isbn": "979-8877665509",
+    "description": "Conditionals frequently appear in Sentence Improvement and Cloze Tests. Master the hypothetical past, unreal present, and inversions that examiners use to filter candidates.",
+    "filename": "conditional-sentences.html"
+  },
+  {
+    "id": "conjunctions-connectors",
+    "title": "Conjunctions & Connectors: Sentence Cohesion & Correlative Pairs",
+    "slug": "conjunctions-and-connectors",
+    "topic": "Conjunctions",
+    "targetAudience": "SSC CGL, CHSL, Banking, CDS & Essay Writers",
+    "difficulty": "Intermediate",
+    "coverImage": "/assets/images/books/conjunctions-cover.webp",
+    "coverImageAlt": "Cover image for Conjunctions & Connectors: Sentence Cohesion & Correlative Pairs",
+    "imageTags": [
+      "conjunctions",
+      "correlative-conjunctions",
+      "sentence-structure",
+      "linking-words"
+    ],
+    "keyBenefits": [
+      "Master correlative pairs (Not only... but also",
+      "Scarcely... when",
+      "No sooner... than) and eliminate parallel structure flaws."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPCOJ",
+    "publishDate": "2025-03-15",
+    "isbn": "979-8877665511",
+    "description": "Ensure tight grammatical cohesion. Understand correlative pairs, parallel structure requirements, and avoid double conjunction errors like \"Because... therefore\".",
+    "filename": "conjunctions-and-connectors.html"
+  },
+  {
+    "id": "direct-indirect",
+    "title": "Direct & Indirect Speech: Narration Rules & Drills",
+    "slug": "direct-and-indirect-speech",
+    "topic": "Direct & Indirect Speech",
+    "targetAudience": "SSC CGL Tier 2, Bank Exams, Defense & High School",
+    "difficulty": "Advanced",
+    "coverImage": "/assets/images/books/speech-cover.webp",
+    "coverImageAlt": "Cover image for Direct & Indirect Speech: Narration Rules & Drills",
+    "imageTags": [
+      "narration",
+      "direct-indirect",
+      "reported-speech",
+      "ssc-mains",
+      "grammar-guide"
+    ],
+    "keyBenefits": [
+      "Master rules of pronoun changes",
+      "tense shifts",
+      "reporting verb modifications",
+      "and exclamation conversions."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPSPE",
+    "publishDate": "2025-02-20",
+    "isbn": "979-8877665506",
+    "description": "Transform direct quotes into reported speech flawlessly. Covers assertives, interrogatives (Wh- questions & If/Whether), imperatives, optatives, and exclamatory sentences.",
+    "filename": "direct-and-indirect-speech.html"
+  },
+  {
+    "id": "gerunds-infinitives",
+    "title": "Gerunds, Infinitives & Participles: Non-Finite Verbs Demystified",
+    "slug": "gerunds-infinitives-participles",
+    "topic": "Non-Finite Verbs",
+    "targetAudience": "Advanced English Learners, Bank PO & SSC CGL Aspirants",
+    "difficulty": "Advanced",
+    "coverImage": "/assets/images/books/gerund-cover.webp",
+    "coverImageAlt": "Cover image for Gerunds, Infinitives & Participles: Non-Finite Verbs Demystified",
+    "imageTags": [
+      "gerunds",
+      "infinitives",
+      "participles",
+      "non-finite-verbs",
+      "dangling-modifiers"
+    ],
+    "keyBenefits": [
+      "Clear rules on verbs followed only by Gerunds",
+      "verbs taking Infinitives",
+      "split infinitives",
+      "and dangling participles."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPGER",
+    "publishDate": "2025-03-10",
+    "isbn": "979-8877665510",
+    "description": "Non-finite verbs cause immense confusion even among fluent speakers. This guide systematically demystifies bare infinitives, prepositional gerunds, and dangling participle errors.",
+    "filename": "gerunds-infinitives-participles.html"
+  },
+  {
+    "id": "modal-auxiliaries",
+    "title": "Modal Auxiliaries in Action: Usage, Nuances & Traps",
+    "slug": "modal-auxiliaries-in-action",
+    "topic": "Modal Auxiliaries",
+    "targetAudience": "Competitive Exam Aspirants & English Learners",
+    "difficulty": "Intermediate",
+    "coverImage": "/assets/images/books/modals-cover.webp",
+    "coverImageAlt": "Cover image for Modal Auxiliaries in Action: Usage, Nuances & Traps",
+    "imageTags": [
+      "modal-verbs",
+      "modals",
+      "can-could",
+      "may-might",
+      "should-must",
+      "exam-grammar"
+    ],
+    "keyBenefits": [
+      "Demystify subtle nuances between May/Might",
+      "Can/Could",
+      "Must/Should/Ought to",
+      "and perfect modal constructions (should have",
+      "must have)."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPMOD",
+    "publishDate": "2025-02-10",
+    "isbn": "979-8877665504",
+    "description": "Modals carry mood and probability. This book provides laser-focused clarity on expressing ability, permission, deduction, obligation, and past speculation without grammatical error.",
+    "filename": "modal-auxiliaries-in-action.html"
+  },
+  {
+    "id": "prepositions-simplified",
+    "title": "Prepositions Simplified: Fixed Prepositions & Confusions",
+    "slug": "prepositions-simplified",
+    "topic": "Prepositions",
+    "targetAudience": "SSC CGL, Bank PO, NDA, Railway & High School",
+    "difficulty": "Advanced",
+    "coverImage": "/assets/images/books/prepositions-cover.webp",
+    "coverImageAlt": "Cover image for Prepositions Simplified: Fixed Prepositions & Confusions",
+    "imageTags": [
+      "prepositions",
+      "fixed-prepositions",
+      "phrasal-verbs",
+      "idioms",
+      "ssc-english",
+      "bank-english"
+    ],
+    "keyBenefits": [
+      "Comprehensive index of 350+ essential fixed prepositions",
+      "subtle distinction tables",
+      "and prepositions of time/place."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPPRE",
+    "publishDate": "2025-02-01",
+    "isbn": "979-8877665503",
+    "description": "Stop guessing which preposition follows which verb or adjective. This book compiles over 350 frequently tested fixed preposition combinations with memory anchors and exam-tested practice questions.",
+    "filename": "prepositions-simplified.html"
+  },
+  {
+    "id": "question-tags",
+    "title": "Question Tags Perfected: Rules, Exceptions & Drills",
+    "slug": "question-tags-perfected",
+    "topic": "Question Tags",
+    "targetAudience": "SSC, Banking, Spoken English & Competitive Aspirants",
+    "difficulty": "Beginner",
+    "coverImage": "/assets/images/books/tags-cover.webp",
+    "coverImageAlt": "Cover image for Question Tags Perfected: Rules, Exceptions & Drills",
+    "imageTags": [
+      "question-tags",
+      "tags",
+      "auxiliary-verbs",
+      "spoken-english",
+      "exam-tips"
+    ],
+    "keyBenefits": [
+      "Master tricky question tags: \"I am\"",
+      "negative adverbs (hardly",
+      "seldom)",
+      "imperative tags",
+      "and indefinite pronouns."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPQTG",
+    "publishDate": "2025-03-01",
+    "isbn": "979-8877665508",
+    "description": "Score 100% on Question Tag questions. Learn the exact rules governing \"aren't I?\", \"shall we?\", \"will you?\", and negative adverb triggers.",
+    "filename": "question-tags-perfected.html"
+  },
+  {
+    "id": "sentence-improvement",
+    "title": "Sentence Improvement Handbook: Replace & Refine for Maximum Marks",
+    "slug": "sentence-improvement-handbook",
+    "topic": "Sentence Improvement",
+    "targetAudience": "SSC CGL Tier 1 & Tier 2, Banking & State Exams",
+    "difficulty": "Intermediate",
+    "coverImage": "/assets/images/books/sentence-imp-cover.webp",
+    "coverImageAlt": "Cover image for Sentence Improvement Handbook: Replace & Refine for Maximum Marks",
+    "imageTags": [
+      "sentence-improvement",
+      "sentence-correction",
+      "phrase-replacement",
+      "competitive-english"
+    ],
+    "keyBenefits": [
+      "Learn how to evaluate bracketed sentence segments rapidly",
+      "eliminate distractors",
+      "and choose idiomatic",
+      "grammatically sound phrasing."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPSEN",
+    "publishDate": "2025-03-25",
+    "isbn": "979-8877665513",
+    "description": "Sentence improvement requires both grammatical rigor and stylistic awareness. This handbook gives you a systematic elimination framework for 350+ standard exam patterns.",
+    "filename": "sentence-improvement-handbook.html"
+  },
+  {
+    "id": "shortcuts-formulae",
+    "title": "English Grammar Shortcuts: Formulae, Mnemonics & Exam Traps",
+    "slug": "english-grammar-shortcuts",
+    "topic": "Grammar Shortcuts",
+    "targetAudience": "Aspirants wanting rapid revision & maximum score boost in minimal time",
+    "difficulty": "Beginner",
+    "coverImage": "/assets/images/books/shortcuts-cover.webp",
+    "coverImageAlt": "Cover image for English Grammar Shortcuts: Formulae, Mnemonics & Exam Traps",
+    "imageTags": [
+      "shortcuts",
+      "mnemonics",
+      "quick-revision",
+      "formula-book",
+      "last-minute-prep"
+    ],
+    "keyBenefits": [
+      "100 powerful",
+      "time-saving grammar rules summarized as mathematical formulae and catchy mnemonics for rapid exam recall."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPSHO",
+    "publishDate": "2025-03-30",
+    "isbn": "979-8877665514",
+    "description": "Revision in the final 15 days before an exam requires condensed rules, not 500-page textbooks. This book distills the entire grammar syllabus into 100 high-impact formulae and memory triggers.",
+    "filename": "english-grammar-shortcuts.html"
+  },
+  {
+    "id": "sva-mastery",
+    "title": "Subject-Verb Agreement Mastery Guide",
+    "slug": "subject-verb-agreement-mastery",
+    "topic": "Subject-Verb Agreement",
+    "targetAudience": "SSC CGL, CHSL, Banking, CDS & Academic Exams",
+    "difficulty": "Intermediate",
+    "coverImage": "/assets/images/books/sva-cover.webp",
+    "coverImageAlt": "Cover image for Subject-Verb Agreement Mastery Guide",
+    "imageTags": [
+      "subject-verb-agreement",
+      "error-spotting",
+      "ssc-cgl",
+      "bank-po",
+      "grammar-rules",
+      "singular-plural"
+    ],
+    "keyBenefits": [
+      "Master all 30 foundational and tricky rules",
+      "high-frequency parenthetical traps",
+      "and 200+ solved exam questions."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPSVA",
+    "publishDate": "2025-01-15",
+    "isbn": "979-8877665501",
+    "description": "The definitive handbook to conquering Subject-Verb Agreement errors in competitive English exams. Features real exam PYQs, inverted sentence traps, collective noun variations, and instant error spotting mnemonics.",
+    "filename": "subject-verb-agreement-mastery.html"
+  },
+  {
+    "id": "tenses-decoded",
+    "title": "Tenses Decoded: Structure, Nuance & Exam Accuracy",
+    "slug": "tenses-decoded",
+    "topic": "Tenses",
+    "targetAudience": "Banking, SSC, UPSC CDS, IELTS & Students",
+    "difficulty": "Intermediate",
+    "coverImage": "/assets/images/books/tenses-cover.webp",
+    "coverImageAlt": "Cover image for Tenses Decoded: Structure, Nuance & Exam Accuracy",
+    "imageTags": [
+      "tenses",
+      "past-perfect",
+      "future-perfect",
+      "conditionals",
+      "time-markers",
+      "verb-forms"
+    ],
+    "keyBenefits": [
+      "Eliminate confusion between Simple Past vs Past Perfect",
+      "Present Perfect vs Past",
+      "and mastered future conditional timelines."
+    ],
+    "amazonUrl": "https://www.amazon.com/dp/B0EXAMPTEN",
+    "publishDate": "2025-01-20",
+    "isbn": "979-8877665502",
+    "description": "Learn the true logic behind all 12 English tenses. Never make a timeline mistake again with our visual timelines, time marker tables (since/for, by the time, already), and exam error spotting exercises.",
+    "filename": "tenses-decoded.html"
+  }
+]

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Blog Publishing Editor | ZeroError CMS</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/admin.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/books.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body class="admin-body">
+
+  <header class="admin-header">
+    <div class="admin-header-inner">
+      <div style="display: flex; align-items: center; gap: var(--space-4);">
+        <a href="/admin/index.html" class="brand-logo" style="font-size: 1.125rem;">
+          <div class="brand-symbol" style="width: 28px; height: 28px; font-size: 0.8rem;">ZE</div>
+          <span>ZeroError<strong>CMS</strong></span>
+        </a>
+        <span class="badge badge-primary">HTML Blog Editor</span>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: var(--space-3);">
+        <button type="button" id="save-draft-btn" class="btn btn-secondary btn-sm">Save Draft</button>
+        <button type="button" id="schedule-post-btn" class="btn btn-secondary btn-sm">Schedule...</button>
+        <button type="button" id="publish-now-btn" class="btn btn-primary btn-sm">Publish Now</button>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <span class="theme-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <nav class="admin-sidebar-nav">
+        <a href="/admin/index.html" class="admin-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Dashboard Overview</span>
+        </a>
+        <a href="/admin/create-post.html" class="admin-nav-item active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          <span>Create / Edit Post</span>
+        </a>
+        <a href="/admin/schedule.html" class="admin-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Post Scheduler</span>
+        </a>
+        <a href="/admin/image-tags.html" class="admin-nav-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Image Tags &amp; Media</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <form id="post-editor-form">
+        <!-- Post Metadata Grid -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-6); box-shadow: var(--shadow-sm);">
+          <h2 style="font-size: var(--fs-lg); font-weight: var(--fw-bold); margin-bottom: var(--space-4);">Article Metadata &amp; SEO</h2>
+
+          <div class="grid grid-cols-2" style="gap: var(--space-4); margin-bottom: var(--space-4);">
+            <div>
+              <label class="form-label">Article Title *</label>
+              <input type="text" id="post-title" class="form-input" placeholder="e.g. 10 Tricky Preposition Rules in SSC Exams" required />
+            </div>
+            <div>
+              <label class="form-label">URL Slug (Auto-generated)</label>
+              <input type="text" id="post-slug" class="form-input" placeholder="10-tricky-preposition-rules-in-ssc" required />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-4" style="gap: var(--space-4); margin-bottom: var(--space-4);">
+            <div>
+              <label class="form-label">Category</label>
+              <select id="post-category" class="form-select">
+                <option value="Grammar Rules">Grammar Rules</option>
+                <option value="Exam Traps">Exam Traps</option>
+                <option value="Error Spotting">Error Spotting</option>
+                <option value="Sentence Improvement">Sentence Improvement</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label">Grammar Topic</label>
+              <select id="post-topic" class="form-select">
+                <option value="Subject-Verb Agreement">Subject-Verb Agreement</option>
+                <option value="Tenses">Tenses</option>
+                <option value="Prepositions">Prepositions</option>
+                <option value="Modal Auxiliaries">Modal Auxiliaries</option>
+                <option value="Active &amp; Passive Voice">Active &amp; Passive Voice</option>
+                <option value="Direct &amp; Indirect Speech">Direct &amp; Indirect Speech</option>
+                <option value="Articles">Articles</option>
+                <option value="Question Tags">Question Tags</option>
+                <option value="Conditionals">Conditionals</option>
+                <option value="Non-Finite Verbs">Non-Finite Verbs</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label">Difficulty</label>
+              <select id="post-difficulty" class="form-select">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate" selected>Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label">Reading Time (mins)</label>
+              <input type="number" id="post-reading-time" class="form-input" value="6" min="1" max="60" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3" style="gap: var(--space-4); margin-bottom: var(--space-4);">
+            <div>
+              <label class="form-label">Target Exams</label>
+              <input type="text" id="post-exam" class="form-input" value="SSC CGL, Banking, CDS, NDA" />
+            </div>
+            <div>
+              <label class="form-label">Author Byline</label>
+              <input type="text" id="post-author" class="form-input" value="ZeroErrorEnglish Editorial" />
+            </div>
+            <div>
+              <label class="form-label">Contextual Related Book</label>
+              <select id="post-related-books" class="form-select">
+                <option value="subject-verb-agreement-mastery">Subject-Verb Agreement Mastery Guide</option>
+                <option value="tenses-decoded">Tenses Decoded</option>
+                <option value="prepositions-simplified">Prepositions Simplified</option>
+                <option value="modal-auxiliaries-in-action">Modal Auxiliaries in Action</option>
+                <option value="active-and-passive-voice">Active &amp; Passive Voice</option>
+                <option value="direct-and-indirect-speech">Direct &amp; Indirect Speech</option>
+                <option value="500-error-spotting-questions">500+ Error Spotting Questions</option>
+                <option value="english-grammar-shortcuts">English Grammar Shortcuts</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-bottom: var(--space-4);">
+            <label class="form-label">Short Excerpt (Displayed in Cards &amp; Meta Description)</label>
+            <textarea id="post-excerpt" class="form-input" rows="2" placeholder="Brief summary of what the student will learn..."></textarea>
+          </div>
+
+          <div class="grid grid-cols-2" style="gap: var(--space-4); margin-bottom: var(--space-4);">
+            <div>
+              <label class="form-label">SEO Title (Optional override)</label>
+              <input type="text" id="post-seo-title" class="form-input" placeholder="Custom SEO Title" />
+            </div>
+            <div>
+              <label class="form-label">Meta Description (Optional override)</label>
+              <input type="text" id="post-meta-desc" class="form-input" placeholder="Search engine description" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3" style="gap: var(--space-4); margin-bottom: var(--space-4);">
+            <div>
+              <label class="form-label">Tags (comma-separated)</label>
+              <input type="text" id="post-tags" class="form-input" placeholder="grammar-rules, error-spotting, ssc-cgl" />
+            </div>
+            <div>
+              <label class="form-label">Featured Image URL</label>
+              <input type="text" id="post-featured-image" class="form-input" value="/assets/images/blog/default.webp" />
+            </div>
+            <div>
+              <label class="form-label">Image Alt Text</label>
+              <input type="text" id="post-featured-alt" class="form-input" placeholder="Descriptive alt text for SEO" />
+            </div>
+          </div>
+
+          <div id="schedule-datetime-row" style="margin-top: var(--space-4); padding: var(--space-4); background: var(--bg-secondary); border-radius: var(--radius-md); border: 1px solid var(--border-color); display: none;">
+            <label class="form-label" style="font-weight: var(--fw-bold); color: var(--primary);">Scheduled Publication Date &amp; Time</label>
+            <input type="datetime-local" id="post-scheduled-at" class="form-input" style="max-width: 320px;" />
+            <div style="font-size: var(--fs-xs); color: var(--text-muted); margin-top: var(--space-1);">The article will remain in the schedule queue and automatically publish at this time.</div>
+          </div>
+        </div>
+
+        <!-- HTML Content Editor & Educational Block Inserters -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: var(--space-6); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-3); flex-wrap: wrap; gap: var(--space-2);">
+            <h2 style="font-size: var(--fs-lg); font-weight: var(--fw-bold); margin: 0;">Article Body (HTML)</h2>
+
+            <div class="editor-view-modes">
+              <button type="button" class="btn btn-secondary btn-xs view-tab-btn active" data-mode="split">Split View</button>
+              <button type="button" class="btn btn-secondary btn-xs view-tab-btn" data-mode="code">Source HTML</button>
+              <button type="button" class="btn btn-secondary btn-xs view-tab-btn" data-mode="preview">Visual Preview</button>
+            </div>
+          </div>
+
+          <!-- Educational Block Inserters Bar -->
+          <div class="edu-block-inserters" style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3); padding: var(--space-3); background: var(--bg-secondary); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <span style="font-size: var(--fs-xs); font-weight: var(--fw-bold); color: var(--text-muted); align-self: center; margin-right: var(--space-2);">+ Quick Educational Blocks:</span>
+            <button type="button" class="btn btn-outline btn-xs quick-block-btn" data-block="rule-box">📘 Core Rule Box</button>
+            <button type="button" class="btn btn-outline btn-xs quick-block-btn" data-block="exam-trap">⚠️ High-Frequency Exam Trap</button>
+            <button type="button" class="btn btn-outline btn-xs quick-block-btn" data-block="compare-box">⚖️ Compare (Wrong vs Right)</button>
+            <button type="button" class="btn btn-outline btn-xs quick-block-btn" data-block="remember-box">💡 Memory Shortcut</button>
+            <button type="button" class="btn btn-outline btn-xs quick-block-btn" data-block="practice-box">🎯 Practice Drill</button>
+            <button type="button" class="btn btn-outline btn-xs quick-block-btn" data-block="book-insight">📚 eBook Promo Box</button>
+          </div>
+
+          <!-- Editor Split Workspace -->
+          <div class="editor-workspace mode-split" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); min-height: 480px;">
+            <div style="display: flex; flex-direction: column;">
+              <textarea id="editor-source-code" class="form-input" style="flex: 1; min-height: 450px; font-family: monospace; font-size: 0.85rem; line-height: 1.5; resize: vertical;" placeholder="<article>&#10;  <p>Start writing your educational lesson...</p>&#10;</article>"></textarea>
+            </div>
+
+            <div id="editor-preview-container" style="border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: var(--space-6); background: var(--bg-surface); overflow-y: auto; max-height: 520px;">
+              <!-- Live preview rendered here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Scheduling Modal / Popup Dialog -->
+        <div id="schedule-dialog" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 1000; align-items: center; justify-content: center;">
+          <div style="background: var(--bg-surface); padding: var(--space-6); border-radius: var(--radius-lg); width: 90%; max-width: 440px; border: 1px solid var(--border-color); box-shadow: var(--shadow-xl);">
+            <h3 style="font-size: var(--fs-lg); font-weight: var(--fw-bold); margin-bottom: var(--space-3);">Schedule Article Publication</h3>
+            <p style="font-size: var(--fs-sm); color: var(--text-secondary); margin-bottom: var(--space-4);">Select the exact future date and time for this article to become publicly visible.</p>
+            <div style="margin-bottom: var(--space-6);">
+              <label class="form-label">Publication Date &amp; Time</label>
+              <input type="datetime-local" id="schedule-datetime" class="form-input" />
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: var(--space-2);">
+              <button type="button" class="btn btn-secondary btn-sm" id="cancel-schedule-btn">Cancel</button>
+              <button type="button" class="btn btn-primary btn-sm" id="confirm-schedule-btn">Confirm Schedule</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script type="module" src="/assets/js/main.js"></script>
+  <script type="module" src="/assets/js/blog-editor.js"></script>
+</body>
+</html>
